@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 //-------------------------------------------------------------------------
 // 2026. 10. 22 (목)
@@ -26,7 +27,89 @@
 // ● Feature - 개인 개발	: 개인 사용자가 개발하는 버전. 개인이 개발한 버전을 추후 버그 발생 여부에 따라 Develop에 Merge한다.
 // 출처: https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-github-flow-git-flow-%F0%9F%93%88-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%A0%84%EB%9E%B5
 
-int main()
-{
+//[PCCE 기출문제] 1번 / 문자 출력	[ 1점 ]
+//int main(void) {
+//    string message = "Let's go!";
+//
+//    cout << "3" << std::endl << "2" << std::endl << "1" << endl;
+//    cout << message << endl;
+//
+//    return 0;
+//}
 
-}
+//[PCCE 기출문제] 2번 / 각도 합치기	[ 2점 ]
+//int main(void) {
+//    int angle1;
+//    int angle2;
+//    cin >> angle1 >> angle2;
+//
+//    int sum_angle = (angle1 + angle2) % 360;
+//    cout << sum_angle << endl;
+//    return 0;
+//}
+
+//[PCCE 기출문제] 3번 / 수 나누기   [ 6점 ]
+//int main(void) {
+//    int number;
+//    cin >> number;
+//
+//    int answer = 0;
+//
+//    while (number > 0) {
+//        answer += number % 100;
+//        number /= 100;
+//    }
+//    cout << answer << endl;
+//    return 0;
+//}
+
+//[PCCE 기출문제] 4번 / 병과분류	[ 2점 ]
+//int main(void) {
+//    string code;
+//    cin >> code;
+//    string last_four_words = code.substr(code.size() - 4, 4);
+//    if (last_four_words ==
+//        "_eye"
+//        ) {
+//        cout << "Ophthalmologyc";
+//    }
+//    else if (
+//        last_four_words == "head"
+//        ) {
+//        cout << "Neurosurgery";
+//    }
+//    else if (
+//        last_four_words == "infl"
+//        ) {
+//        cout << "Orthopedics";
+//    }
+//
+//    else if (last_four_words == "skin")
+//    {
+//        cout << "Dermatology";
+//    }
+//
+//    else
+//    {
+//        cout << "direct recommendation";
+//    }
+//    return 0;
+//}
+
+
+//[PCCE 기출문제] 5번 / 심폐소생술    [ 1점 ]
+//vector<int> solution(vector<string> cpr) {
+//    vector<int> answer = { 0, 0, 0, 0, 0 };
+//    vector<string> basic_order = { "check", "call", "pressure", "respiration", "repeat" };
+//
+//    for (int i = 0; i < 5; i++) {
+//        for (int j = 0; j < cpr[i].size(); j++) {
+//            if (cpr[i] == basic_order[j]) {
+//                answer[i] = j + 1;
+//                break;
+//            }
+//        }
+//    }
+//
+//    return answer;
+//}
