@@ -113,3 +113,59 @@ using namespace std;
 //
 //    return answer;
 //}
+
+//[PCCE 기출문제] 6번 / 물 부족		[ 5점 ]		★ 준영이형 도움 받음
+//int solution(int storage, int usage, vector<int> change) {
+//    int total_usage = 0;
+//    for (int i = 0; i < change.size(); i++) {
+//        usage = usage * (static_cast<float>(100 + change[i]) / 100.0f);
+//		  ◆ 내 방식 : usage = usage * ((100 + change[i]) / 100);	
+//                                                 ↑ 이새끼 나눌 때 float형이라고 명시 혹은 실수형으로 계산해야 한다 단서를 줘야 실수로 계산함.
+//        total_usage += usage;
+//        if (total_usage > storage) {
+//            return i;
+//        }
+//    }
+//    return -1;
+//}
+
+
+//[PCCE 기출문제] 7번 / 버스		[ 1점 ]
+//int solution(int seat, vector<vector<string>> passengers) {
+//    int num_passenger = 0;
+//    for (int i = 0; i < passengers.size(); i++) {
+//        num_passenger += func3(passengers[i]);
+//        num_passenger -= func4(passengers[i]);
+//    }
+//    int answer = func1(seat + num_passenger);
+//    return answer;
+//}
+
+//[PCCE 기출문제] 8번 / 닉네임 규칙	[ 2점 ]
+//string solution(string nickname) {
+//    string answer = "";
+//    for (int i = 0; i < nickname.size(); i++) {
+//        if (nickname[i] == 'l') {
+//            answer += "I";
+//        }
+//        else if (nickname[i] == 'w') {
+//            answer += "vv";
+//        }
+//        else if (nickname[i] == 'W') {
+//            answer += "VV";
+//        }
+//        else if (nickname[i] == 'O') {
+//            answer += "0";
+//        }
+//        else {
+//            answer += nickname[i];
+//        }
+//    }
+//    while (answer.size() < 4) {
+//        answer += "o";
+//    }
+//    if (answer.size() > 8) {
+//        answer = answer.substr(0, 8);
+//    }
+//    return answer;
+//}
